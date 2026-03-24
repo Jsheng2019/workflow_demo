@@ -1,18 +1,15 @@
-name: CI
+name: Simple Hello World Workflow
 
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
-  build:
+  hello:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
     - name: Print Hello World
       run: echo "Hello, World!"
-    - name: Run simple Node.js script
-      run: node index.js
+    - name: Print Current Directory
+      run: ls -la
