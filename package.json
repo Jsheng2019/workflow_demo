@@ -1,0 +1,16 @@
+{
+  "name": "workflow-demo",
+  "version": "1.0.0",
+  "description": "GitHub Action demo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "echo \"Building project...\""
+  },
+  "keywords": [
+    "github-action",
+    "demo"
+  ],
+  "author": "",
+  "license": "MIT"
+}
