@@ -7,3 +7,5 @@
 - 添加了 `ci.yml` 工作流用于多 Node 版本的 Node.js CI 测试
 - 添加了 `pages.yml` 工作流用于 GitHub Pages 部署
 - 添加了 README.md 文件，包含 GitHub Action 使用指导
+- 添加了 `package.json` 文件，配置了基本的项目脚本
+- 添加了 `index.js` 文件，作为项目的主文件
