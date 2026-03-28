@@ -1,4 +1,4 @@
-name: PR Gate - Branch Verification
+name: PR Gate - Branch Verification (DEV VERSION)
 
 on:
   pull_request:
@@ -15,13 +15,15 @@ jobs:
     - name: Print Workflow Branch Info
       run: |
         echo "========================================"
-        echo "PR 门禁验证 - 分支信息"
+        echo "PR 门禁验证 - 分支信息 (DEV 分支版本)"
         echo "========================================"
+        echo "⚠️  注意: 这是 DEV 分支上的 workflow 文件 ⚠️"
         echo "当前执行的分支 (github.ref): ${{ github.ref }}"
         echo "当前执行的分支名称 (github.ref_name): ${{ github.ref_name }}"
         echo "PR 源分支 (github.head_ref): ${{ github.head_ref }}"
         echo "PR 目标分支 (github.base_ref): ${{ github.base_ref }}"
-        echo "工作流文件所在分支: ${{ github.event.pull_request.head.ref }}"
+        echo "工作流文件来源: DEV 分支"
         echo "========================================"
         echo "结论: 此 workflow 执行在 ${{ github.ref_name }} 分支上"
+        echo "工作流定义来源: DEV 分支"
         echo "========================================"
