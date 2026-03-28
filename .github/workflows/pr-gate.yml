@@ -15,7 +15,7 @@ jobs:
     - name: Print Workflow Branch Info
       run: |
         echo "========================================"
-        echo "PR 门禁验证 - 分支信息"
+        echo "PR 门禁验证 - main"
         echo "========================================"
         echo "当前执行的分支 (github.ref): ${{ github.ref }}"
         echo "当前执行的分支名称 (github.ref_name): ${{ github.ref_name }}"
